@@ -19,7 +19,7 @@ jobs:
     check-bats-version:
         runs-on: ubuntu-latest
         env:
-            F: ${{ secrets.ABC }}
+            F: ${{ secrets.my-env.ABC }}
         steps:
             - uses: actions/checkout@v3
             - uses: actions/setup-node@v3
