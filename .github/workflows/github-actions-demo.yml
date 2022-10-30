@@ -18,6 +18,7 @@ jobs:
             - run: echo "🍏 This job's status is ${{ job.status }}."
     check-bats-version:
         runs-on: ubuntu-latest
+        environment: my-env
         env:
             F: ${{ secrets.ABC }}
         steps:
